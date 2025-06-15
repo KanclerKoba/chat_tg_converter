@@ -22,18 +22,32 @@ python -m venv venv
 .\venv\Scripts\activate
 pip install -r requirements.txt
 streamlit run streamlit_app.py
+```
 
-Браузер откроет http://localhost:8501. Загрузите result.json или messages.html, отметьте опции, нажмите Convert и скачайте результат.
-Совет: вместо команд можно запустить start.bat — он всё сделает сам.
+Браузер откроет `http://localhost:8501`. Загрузите `result.json` или `messages.html`, отметьте опции, нажмите **Convert** и скачайте результат.  
+> Совет: вместо команд можно запустить `start.bat` — он всё сделает сам.
 
-**## Состав проекта**  
-| Файл               | Назначение                               |
-| ------------------ | ---------------------------------------- |
-| converter.py       | Логика обработки JSON/HTML               |
-| streamlit_app.py   | Веб-интерфейс на Streamlit               |
-| requirements.txt   | Список Python-зависимостей               |
-| start.bat          | Автозапуск под Windows (необязательно)   |
-| README.md          | Этот файл                                |
+## Быстрый запуск (macOS / Linux)
 
-Лицензия  
-MIT License © 2025 Ваше имя
+```bash
+git clone https://github.com/<YOUR_LOGIN>/telegram_converter_app.git
+cd telegram_converter_app
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
+## Состав проекта
+
+| Файл               | Назначение                             |
+| ------------------ | -------------------------------------- |
+| `converter.py`     | Логика обработки JSON/HTML            |
+| `streamlit_app.py` | Веб-интерфейс на Streamlit            |
+| `requirements.txt` | Список Python-зависимостей            |
+| `start.bat`        | Автозапуск под Windows (необязательно)|
+| `README.md`        | Этот файл                             |
+
+## Лицензия
+
+MIT License © 2025 Кальмуцкий Владислав
